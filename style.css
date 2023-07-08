@@ -1,0 +1,152 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  color: hsl(228, 12%, 48%);
+}
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: hsl(30, 38%, 92%);
+  align-items: center;
+  justify-content: center;
+  border: 1px solid purple;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  background: hsl(0, 0%, 100%);
+  border-radius: 10px;
+  margin: 5%;
+  /* border: 1px solid blue; */
+}
+
+.image {
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+  /* border: 1px solid red; */
+}
+
+.card {
+  margin: 1.8em;
+  height: 40%;
+  /* border: 1px solid red; */
+}
+
+h2 {
+  /* margin: 0.5rem 0rem;         */
+  letter-spacing: 0.4rem;
+  opacity: 60%;
+  font-size: 0.9em;
+}
+
+h1 {
+  color: hsl(212, 21%, 14%);
+  margin: 0.5em 0em;
+  font-family: "Fraunces", serif;
+  font-size: 2.2em;
+  line-height: 1em;
+}
+
+p {
+  margin: 1.2em 0em;
+  line-height: 1.5em;
+  opacity: 80%;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  margin: 1.2em 0em;
+}
+
+li.newPrice {
+  color: hsl(158, 36%, 37%);
+  font-family: "Fraunces", serif;
+  padding: 0.2em;
+  font-size: 2.3em;
+}
+
+li.oldPrice {
+  padding: 1.2em;
+  font-size: 1em;
+  text-decoration: line-through;
+}
+
+.icon-cart {
+  height: 1em;
+  width: 1em;
+  margin: 0 0.5em;
+}
+
+button {
+  color: white;
+  background: hsl(158, 36%, 37%);
+  width: 100%;
+  /* margin-bottom: 2rem; */
+  padding: 1em 0em;
+  border-radius: 0.5em;
+  border: none;
+}
+
+@media only screen and (min-width: 980px) {
+  * {
+    font-size: 14px;
+  }
+  body {
+    display: flex;
+    justify-content: space-between;
+    min-height: 100vh;
+    /* border: 1px solid red; */
+  }
+
+  main {
+    flex-direction: row;
+    align-items: left;
+    width: 40vw;
+    height: 65vh;
+  }
+  .image {
+    height: 100%;
+    border-radius: 10px 0px 0px 10px;
+    /* border: 1px solid purple; */
+  }
+
+  .card {
+    width: 50%;
+    height: 90%;
+    /* border: 1px solid purple; */
+  }
+
+  h2 {
+    margin-bottom: 1.5em;
+    letter-spacing: 0.4em;
+  }
+
+  p {
+    margin: 1.5em 0em;
+    line-height: 1.6em;
+  }
+
+  li.newPrice {
+    color: hsl(158, 36%, 37%);
+    font-family: "Fraunces", serif;
+    padding: 0.2em;
+    font-size: 2.1em;
+  }
+
+  li.oldPrice {
+    padding: 1em;
+    font-size: 1em;
+    text-decoration: line-through;
+  }
+
+  button {
+    width: 100%;
+  }
+}
